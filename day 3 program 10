@@ -10,3 +10,7 @@ def editDistance(str1, str2, m, n):
                    editDistance(str1, str2, m-1, n),    # Remove
                    editDistance(str1, str2, m-1, n-1)    # Replace
                    )
+                   str1 = "sunday"
+str2 = "saturday"
+print (editDistance(str1, str2, len(str1), len(str2)))
+
